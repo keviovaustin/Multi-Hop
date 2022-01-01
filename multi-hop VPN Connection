@@ -1,0 +1,35 @@
+Hello everyone,
+
+I had new challenge with routing traffic through two VPN servers. Here is some real information about this cenario:
+
+VPS2:
+- I call it L2
+- Located in Frence
+- Runs Ubuntu 18.04.6 LTS
+- Has eth0 as default interface connected to Internet
+- eth0 has public IP address of 51.38.91.186
+- Runs OpenVPN Server
+- Has tun0 as OpenVPN server interface
+- tun0 has IP address of 10.8.0.1
+
+VPS1:
+- I call it L1
+- Located in Canada
+- Runs Ubuntu 18.04.6 LTS
+- Has eth0 as default interface connected to Internet
+- eth0 has public IP address of 23.29.198.144
+- Runs OpenVPN Client
+- Has tun0 as OpenVPN client interface
+- tun0 has IP address of 10.8.0.2
+- Runs PPTP server
+- Has ppp0 as PPTP server interface
+- ppp0 has IP address of 172.16.10.1
+
+Client:
+- Runs Windows 10
+- Has default interface connected to internet
+- Runs PPTP client
+- PPTP interface has IP address of 172.16.10.2
+
+Now that you have all necessary info, how do you think I can solve this matter?
+Please, let me know if needed any further info.
